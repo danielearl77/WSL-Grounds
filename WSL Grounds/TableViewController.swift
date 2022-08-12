@@ -24,12 +24,10 @@ class TableViewController: UITableViewController {
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
         return 1
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
         return Teams.count
     }
 
@@ -38,8 +36,8 @@ class TableViewController: UITableViewController {
      let cell = tableView.dequeueReusableCell(withIdentifier: "TeamCell", for: indexPath)
      // Configure the cell...
      cell.textLabel?.text = Teams[indexPath.row]
-     //let teamIcon: UIImage=UIImage(named: cell.textLabel!.text!)!
-     //cell.imageView!.image=teamIcon
+     let teamIcon: UIImage=UIImage(named: cell.textLabel!.text!)!
+     cell.imageView!.image=teamIcon
      return cell
     }
     
@@ -79,14 +77,23 @@ class TableViewController: UITableViewController {
     }
     */
 
-    /*
-    // MARK: - Navigation
+     // MARK: - Navigation
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
+     // In a storyboard-based application, you will often want to do a little preparation before navigation
+     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+         super.prepare(for: segue, sender: sender)
+         switch(segue.identifier ?? "") {
+         case "showHelp":
+             NSLog("Loading Help Page")
+         case "showDetail":
+             let indexPath = tableView.indexPathForSelectedRow!
+             let selected = indexPath.row
+             let teamDetailViewController = segue.destination as? TeamViewController
+             let team = Teams[selected]
+             teamDetailViewController?.teamName = team
+         default:
+             fatalError("Unexpected Segue Identifier: \(String(describing: segue.identifier))")
+         }
+     }
 
 }

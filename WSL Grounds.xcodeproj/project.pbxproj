@@ -7,16 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1417538828A572B1009595C7 /* TeamInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1417538728A572B1009595C7 /* TeamInfoViewController.swift */; };
+		1417538A28A57368009595C7 /* TeamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1417538928A57367009595C7 /* TeamViewController.swift */; };
 		141C5DE2289BA768009F4A66 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 141C5DE1289BA768009F4A66 /* AppDelegate.swift */; };
 		141C5DE4289BA768009F4A66 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 141C5DE3289BA768009F4A66 /* SceneDelegate.swift */; };
 		141C5DE6289BA768009F4A66 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 141C5DE5289BA768009F4A66 /* ViewController.swift */; };
 		141C5DE9289BA768009F4A66 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 141C5DE7289BA768009F4A66 /* Main.storyboard */; };
 		141C5DEB289BA769009F4A66 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 141C5DEA289BA769009F4A66 /* Assets.xcassets */; };
 		141C5DEE289BA769009F4A66 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 141C5DEC289BA769009F4A66 /* LaunchScreen.storyboard */; };
+		148AA6ED28A6369300B8C02F /* TeamMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 148AA6EC28A6369300B8C02F /* TeamMapViewController.swift */; };
+		148AA6EF28A6390100B8C02F /* TeamFixturesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 148AA6EE28A6390100B8C02F /* TeamFixturesViewController.swift */; };
 		14D54511289C398700F0BEDC /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14D54510289C398700F0BEDC /* TableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1417538728A572B1009595C7 /* TeamInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamInfoViewController.swift; sourceTree = "<group>"; };
+		1417538928A57367009595C7 /* TeamViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamViewController.swift; sourceTree = "<group>"; };
 		141C5DDE289BA768009F4A66 /* WSL Grounds.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "WSL Grounds.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		141C5DE1289BA768009F4A66 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		141C5DE3289BA768009F4A66 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -25,6 +31,8 @@
 		141C5DEA289BA769009F4A66 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		141C5DED289BA769009F4A66 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		141C5DEF289BA769009F4A66 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		148AA6EC28A6369300B8C02F /* TeamMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamMapViewController.swift; sourceTree = "<group>"; };
+		148AA6EE28A6390100B8C02F /* TeamFixturesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamFixturesViewController.swift; sourceTree = "<group>"; };
 		14D54510289C398700F0BEDC /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -63,6 +71,10 @@
 				141C5DE5289BA768009F4A66 /* ViewController.swift */,
 				14D54510289C398700F0BEDC /* TableViewController.swift */,
 				141C5DE7289BA768009F4A66 /* Main.storyboard */,
+				148AA6EE28A6390100B8C02F /* TeamFixturesViewController.swift */,
+				148AA6EC28A6369300B8C02F /* TeamMapViewController.swift */,
+				1417538728A572B1009595C7 /* TeamInfoViewController.swift */,
+				1417538928A57367009595C7 /* TeamViewController.swift */,
 				141C5DEA289BA769009F4A66 /* Assets.xcassets */,
 				141C5DEC289BA769009F4A66 /* LaunchScreen.storyboard */,
 				141C5DEF289BA769009F4A66 /* Info.plist */,
@@ -141,9 +153,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1417538828A572B1009595C7 /* TeamInfoViewController.swift in Sources */,
+				1417538A28A57368009595C7 /* TeamViewController.swift in Sources */,
 				141C5DE6289BA768009F4A66 /* ViewController.swift in Sources */,
 				141C5DE2289BA768009F4A66 /* AppDelegate.swift in Sources */,
+				148AA6ED28A6369300B8C02F /* TeamMapViewController.swift in Sources */,
 				141C5DE4289BA768009F4A66 /* SceneDelegate.swift in Sources */,
+				148AA6EF28A6390100B8C02F /* TeamFixturesViewController.swift in Sources */,
 				14D54511289C398700F0BEDC /* TableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
