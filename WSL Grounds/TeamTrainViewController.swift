@@ -1,5 +1,5 @@
 //
-//  TeamFixturesViewController.swift
+//  TeamTrainViewController.swift
 //  WSL Grounds
 //
 //  Created by Daniel Earl on 12/08/2022.
@@ -8,26 +8,42 @@
 import UIKit
 import WebKit
 
-class TeamFixturesViewController: UIViewController, WKUIDelegate, WKNavigationDelegate {
+class TeamTrainViewController: UIViewController, WKUIDelegate, WKNavigationDelegate {
 
     @IBOutlet weak var webView: WKWebView!
-    @IBOutlet weak var errorMsg: UILabel!
     @IBOutlet weak var pageLoadingSpinner: UIActivityIndicatorView!
+    @IBOutlet weak var pageBackButton: UIButton!
+    @IBOutlet weak var errorMsg: UILabel!
     
-    func loadFixturesData() {
+    func loadStationData() {
         errorMsg.isHidden = true
         pageLoadingSpinner.startAnimating()
         pageLoadingSpinner.isHidden = false
-        let fixturesURL = (parent as! TeamViewController).teamFixtures
-        let myURL = URL(string: fixturesURL)
-        let myRequest = URLRequest(url: myURL!)
-        webView.load(myRequest)
+        let station = (parent as! TeamViewController).stationCode
+        if station == "XXX" {
+            pageLoadingSpinner.stopAnimating()
+            pageLoadingSpinner.isHidden = true
+            errorMsg.text = "This ground is not close to any National Rail Station. Please check the public transport section for other options."
+            errorMsg.isHidden = false
+        } else {
+            var stationURL = "http://m.nationalrail.co.uk/pj/ldbboard/dep/"
+            stationURL.append(station)
+            let myURL = URL(string: stationURL)
+            let myRequest = URLRequest(url: myURL!)
+            webView.load(myRequest)
+        }
     }
     
     func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
         pageLoadingSpinner.stopAnimating()
         pageLoadingSpinner.isHidden = true
         errorMsg.isHidden = true
+        let allowBack = webView.canGoBack
+        if allowBack == true {
+            pageBackButton.isHidden = false
+        } else {
+            pageBackButton.isHidden = true
+        }
     }
     
     func webView(_ webView: WKWebView,
@@ -59,10 +75,14 @@ class TeamFixturesViewController: UIViewController, WKUIDelegate, WKNavigationDe
         print(error._code)
     }
     
+    @IBAction func pageBack(_ sender: Any) {
+        webView.goBack()
+    }
+    
     override func viewDidLoad() {
         webView.navigationDelegate = self
         super.viewDidLoad()
-        loadFixturesData()
+        loadStationData()
         // Do any additional setup after loading the view.
     }
     
