@@ -18,7 +18,9 @@
                         <viewLayoutGuide key="safeArea" id="Hkp-E7-R56"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Support Us" id="uiw-vY-qYy"/>
+                    <navigationItem key="navigationItem" title="Support Us" id="uiw-vY-qYy">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="R4e-dU-iUk"/>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nMX-wn-45o" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -54,7 +56,7 @@
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="justified" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kcN-LZ-ow9">
                                 <rect key="frame" x="20" y="228" width="388" height="624"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <mutableString key="text">This app aims to provide travel information for fans travelling to the English Womens Super Leauge matches.    
+                                <string key="text">This app aims to provide travel information for fans travelling to the English Womens Super Leauge matches.    
 All directions given in this app are taken from either maps or personal experience.  The map view works in exactly the same way as the built-in map app on the iPhone, showing current location and allowing you to zoom in and out.  
 
 Please contact us if you think the directions are wrong or can provide clearer routes to the grounds.
@@ -71,7 +73,7 @@ www.phone-app.co.uk
 
 To get in touch please use the contact form on the website.
 
-© 2012 - 2022</mutableString>
+© 2012 - 2022</string>
                                 <color key="textColor" systemColor="labelColor"/>
                                 <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -267,93 +269,42 @@ A fan travel guide to all of the WSL grounds.</string>
                         <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4po-42-Byw">
-                                <rect key="frame" x="0.0" y="88" width="428" height="755"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="By Car" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mvc-ls-4KO">
-                                        <rect key="frame" x="20" y="20" width="400" height="21"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="400" id="0rS-7d-5BI"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Public Transport" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jUi-hj-YVZ">
-                                        <rect key="frame" x="20" y="87" width="276" height="21"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="276" id="Qxr-g3-nSb"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Food and Drink" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L4K-02-ev9">
-                                        <rect key="frame" x="176" y="151" width="116" height="21"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HQH-Uh-AeL">
-                                        <rect key="frame" x="20" y="46" width="400" height="33"/>
-                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                        <color key="textColor" systemColor="labelColor"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                    </textView>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="EPF-NG-F3X">
-                                        <rect key="frame" x="20" y="113" width="400" height="33"/>
-                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                        <color key="textColor" systemColor="labelColor"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                    </textView>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="D42-HM-t6c">
-                                        <rect key="frame" x="20" y="180" width="400" height="33"/>
-                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                        <color key="textColor" systemColor="labelColor"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                    </textView>
-                                </subviews>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ueo-Rj-jdz">
+                                <rect key="frame" x="20" y="88" width="388" height="675"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <attributedString key="attributedText"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OkN-Y1-rto">
+                                <rect key="frame" x="20" y="783" width="388" height="40"/>
                                 <constraints>
-                                    <constraint firstItem="D42-HM-t6c" firstAttribute="top" secondItem="L4K-02-ev9" secondAttribute="bottom" constant="8" symbolic="YES" id="25J-WE-xoa"/>
-                                    <constraint firstItem="Mvc-ls-4KO" firstAttribute="top" secondItem="4po-42-Byw" secondAttribute="top" constant="20" id="3Vb-eF-hdq"/>
-                                    <constraint firstItem="EPF-NG-F3X" firstAttribute="trailing" secondItem="D42-HM-t6c" secondAttribute="trailing" id="6Pb-PL-ohI"/>
-                                    <constraint firstItem="jUi-hj-YVZ" firstAttribute="leading" secondItem="EPF-NG-F3X" secondAttribute="leading" id="B6d-zS-aMr"/>
-                                    <constraint firstAttribute="bottom" secondItem="D42-HM-t6c" secondAttribute="bottom" constant="542" id="CBt-9L-gbL"/>
-                                    <constraint firstItem="Mvc-ls-4KO" firstAttribute="leading" secondItem="HQH-Uh-AeL" secondAttribute="leading" id="Dut-wm-JJI"/>
-                                    <constraint firstItem="Mvc-ls-4KO" firstAttribute="leading" secondItem="4po-42-Byw" secondAttribute="leading" constant="20" id="En0-cj-MWT"/>
-                                    <constraint firstItem="L4K-02-ev9" firstAttribute="top" secondItem="EPF-NG-F3X" secondAttribute="bottom" constant="5" id="RwI-yS-avg"/>
-                                    <constraint firstItem="jUi-hj-YVZ" firstAttribute="top" secondItem="HQH-Uh-AeL" secondAttribute="bottom" constant="8" symbolic="YES" id="Wge-Dg-uI8"/>
-                                    <constraint firstItem="Mvc-ls-4KO" firstAttribute="trailing" secondItem="HQH-Uh-AeL" secondAttribute="trailing" id="bOA-cf-yuL"/>
-                                    <constraint firstItem="HQH-Uh-AeL" firstAttribute="leading" secondItem="jUi-hj-YVZ" secondAttribute="leading" id="dWV-qr-yb8"/>
-                                    <constraint firstItem="EPF-NG-F3X" firstAttribute="top" secondItem="jUi-hj-YVZ" secondAttribute="bottom" constant="5" id="dlx-pG-PIs"/>
-                                    <constraint firstItem="Mvc-ls-4KO" firstAttribute="trailing" secondItem="4po-42-Byw" secondAttribute="trailingMargin" id="fGc-pV-yCg"/>
-                                    <constraint firstItem="HQH-Uh-AeL" firstAttribute="top" secondItem="Mvc-ls-4KO" secondAttribute="bottom" constant="5" id="h1V-KR-yox"/>
-                                    <constraint firstItem="HQH-Uh-AeL" firstAttribute="trailing" secondItem="EPF-NG-F3X" secondAttribute="trailing" id="klT-wS-RN8"/>
-                                    <constraint firstItem="L4K-02-ev9" firstAttribute="leading" secondItem="4po-42-Byw" secondAttribute="leading" constant="176" id="xgj-VZ-f84"/>
-                                    <constraint firstItem="EPF-NG-F3X" firstAttribute="leading" secondItem="D42-HM-t6c" secondAttribute="leading" id="yZz-Ba-GUH"/>
+                                    <constraint firstAttribute="height" constant="40" id="l4Y-Yi-FmH"/>
                                 </constraints>
-                            </scrollView>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="SupportUs"/>
+                                <connections>
+                                    <segue destination="92i-iT-V1P" kind="show" id="6wt-QO-Jt7"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="fW9-4P-nyl"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="4po-42-Byw" secondAttribute="trailing" id="AyT-eF-YOd"/>
-                            <constraint firstItem="4po-42-Byw" firstAttribute="bottom" secondItem="fW9-4P-nyl" secondAttribute="bottom" id="HUz-W0-jTU"/>
-                            <constraint firstItem="4po-42-Byw" firstAttribute="leading" secondItem="xOj-Gh-Xha" secondAttribute="leading" id="dvG-Vt-ElA"/>
-                            <constraint firstItem="4po-42-Byw" firstAttribute="top" secondItem="fW9-4P-nyl" secondAttribute="top" id="e8k-3h-GQs"/>
+                            <constraint firstItem="Ueo-Rj-jdz" firstAttribute="leading" secondItem="fW9-4P-nyl" secondAttribute="leading" constant="20" id="4vk-GT-Db2"/>
+                            <constraint firstItem="fW9-4P-nyl" firstAttribute="bottom" secondItem="OkN-Y1-rto" secondAttribute="bottom" constant="20" id="92Z-jK-7O1"/>
+                            <constraint firstItem="OkN-Y1-rto" firstAttribute="top" secondItem="Ueo-Rj-jdz" secondAttribute="bottom" constant="20" id="pBi-lk-2ca"/>
+                            <constraint firstItem="fW9-4P-nyl" firstAttribute="trailing" secondItem="Ueo-Rj-jdz" secondAttribute="trailing" constant="20" id="veW-ip-fbk"/>
+                            <constraint firstItem="fW9-4P-nyl" firstAttribute="trailing" secondItem="OkN-Y1-rto" secondAttribute="trailing" constant="20" id="xuI-M9-oZi"/>
+                            <constraint firstItem="OkN-Y1-rto" firstAttribute="leading" secondItem="fW9-4P-nyl" secondAttribute="leading" constant="20" id="yU2-rA-QSU"/>
+                            <constraint firstItem="Ueo-Rj-jdz" firstAttribute="top" secondItem="fW9-4P-nyl" secondAttribute="top" id="zSj-sp-7oi"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Info" image="infoIconSet" id="SEc-HT-J7l"/>
-                    <navigationItem key="navigationItem" id="gWb-21-KYo"/>
+                    <navigationItem key="navigationItem" id="gWb-21-KYo">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="VY4-Rq-VEd"/>
+                    </navigationItem>
                     <connections>
-                        <outlet property="ByCar" destination="HQH-Uh-AeL" id="3ww-EB-kEm"/>
-                        <outlet property="byCar" destination="HQH-Uh-AeL" id="NA1-kt-Jv7"/>
-                        <outlet property="byDrink" destination="D42-HM-t6c" id="2Fp-Od-Td0"/>
-                        <outlet property="byTrain" destination="EPF-NG-F3X" id="I8c-xE-iF5"/>
+                        <outlet property="teamInfoText" destination="Ueo-Rj-jdz" id="y2S-ZW-7wP"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aGJ-nL-IVc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -454,7 +405,11 @@ A fan travel guide to all of the WSL grounds.</string>
             <point key="canvasLocation" x="1774" y="115"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="6wt-QO-Jt7"/>
+    </inferredMetricsTieBreakers>
     <resources>
+        <image name="SupportUs" width="335" height="40"/>
         <image name="aboutIcon" width="30" height="30"/>
         <image name="fixturesIconSet" width="23" height="23"/>
         <image name="infoIconSet" width="23" height="23"/>

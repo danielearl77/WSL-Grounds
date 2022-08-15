@@ -9,21 +9,43 @@ import UIKit
 
 class TeamInfoViewController: UIViewController {
 
-    @IBOutlet weak var byCar: UITextView!
-    @IBOutlet weak var byTrain: UITextView!
-    @IBOutlet weak var byDrink: UITextView!
+    @IBOutlet weak var teamInfoText: UITextView!
     
     override func viewDidLoad() {
         let carInfo = (parent as! TeamViewController).teamCarInfo
         let trainInfo = (parent as! TeamViewController).teamTrainInfo
         let drinkInfo = (parent as! TeamViewController).teamDrinkInfo
-        byCar.text = carInfo
-        byCar.sizeToFit()
-        byTrain.text = trainInfo
-        byTrain.sizeToFit()
-        byDrink.text = drinkInfo
-        byDrink.sizeToFit()
-        byDrink.textContainerInset = UIEdgeInsets(top: 8,left: 0,bottom: 50,right: 0)
+        
+        let headerFont = UIFont.boldSystemFont(ofSize: 18.0)
+        let bodyFont = UIFont.systemFont(ofSize: 15.0)
+        
+        let paragraphStyle = NSMutableParagraphStyle()
+        paragraphStyle.alignment = .justified
+        
+        let headerAttributes = [NSAttributedString.Key.font: headerFont]
+        let bodyAttributes: [NSAttributedString.Key: Any] = [
+            .font: bodyFont,
+            .paragraphStyle: paragraphStyle]
+        
+        let carTitle = "By Car\n"
+        //let trainTitle = "By Train\n"
+        //let drinkTitle = "Food & Drink\n"
+        
+        let infoText = NSMutableAttributedString(string: carTitle, attributes: headerAttributes)
+        let carContentText = NSMutableAttributedString(string: carInfo, attributes: bodyAttributes)
+        let trainTitle = NSMutableAttributedString(string: "\n\nBy Train\n", attributes: headerAttributes)
+        let trainContentText = NSMutableAttributedString(string: trainInfo, attributes: bodyAttributes)
+        let drinkTitle = NSMutableAttributedString(string: "\n\nFood & Drink\n", attributes: headerAttributes)
+        let drinkContentText = NSMutableAttributedString(string: drinkInfo, attributes: bodyAttributes)
+        
+        infoText.append(carContentText)
+        infoText.append(trainTitle)
+        infoText.append(trainContentText)
+        infoText.append(drinkTitle)
+        infoText.append(drinkContentText)
+        
+        teamInfoText.attributedText = infoText
+        
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
