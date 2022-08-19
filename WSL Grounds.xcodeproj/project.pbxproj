@@ -15,6 +15,10 @@
 		141C5DE9289BA768009F4A66 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 141C5DE7289BA768009F4A66 /* Main.storyboard */; };
 		141C5DEB289BA769009F4A66 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 141C5DEA289BA769009F4A66 /* Assets.xcassets */; };
 		141C5DEE289BA769009F4A66 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 141C5DEC289BA769009F4A66 /* LaunchScreen.storyboard */; };
+		144ED83828AABC6600DE0308 /* IAP Manager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 144ED83728AABC6600DE0308 /* IAP Manager.swift */; };
+		144ED83A28AABC7F00DE0308 /* SupportViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 144ED83928AABC7F00DE0308 /* SupportViewController.swift */; };
+		144ED83D28AABCCC00DE0308 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 144ED83C28AABCCC00DE0308 /* StoreKit.framework */; };
+		144ED83F28AABCFD00DE0308 /* ProductIds.plist in Resources */ = {isa = PBXBuildFile; fileRef = 144ED83E28AABCFD00DE0308 /* ProductIds.plist */; };
 		1455527128A6AE60007368FC /* TeamTrainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1455527028A6AE60007368FC /* TeamTrainViewController.swift */; };
 		148AA6ED28A6369300B8C02F /* TeamMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 148AA6EC28A6369300B8C02F /* TeamMapViewController.swift */; };
 		148AA6EF28A6390100B8C02F /* TeamFixturesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 148AA6EE28A6390100B8C02F /* TeamFixturesViewController.swift */; };
@@ -32,6 +36,10 @@
 		141C5DEA289BA769009F4A66 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		141C5DED289BA769009F4A66 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		141C5DEF289BA769009F4A66 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		144ED83728AABC6600DE0308 /* IAP Manager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "IAP Manager.swift"; sourceTree = "<group>"; };
+		144ED83928AABC7F00DE0308 /* SupportViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupportViewController.swift; sourceTree = "<group>"; };
+		144ED83C28AABCCC00DE0308 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		144ED83E28AABCFD00DE0308 /* ProductIds.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = ProductIds.plist; sourceTree = "<group>"; };
 		1455527028A6AE60007368FC /* TeamTrainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamTrainViewController.swift; sourceTree = "<group>"; };
 		148AA6EC28A6369300B8C02F /* TeamMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamMapViewController.swift; sourceTree = "<group>"; };
 		148AA6EE28A6390100B8C02F /* TeamFixturesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamFixturesViewController.swift; sourceTree = "<group>"; };
@@ -43,6 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				144ED83D28AABCCC00DE0308 /* StoreKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -54,6 +63,7 @@
 			children = (
 				141C5DE0289BA768009F4A66 /* WSL Grounds */,
 				141C5DDF289BA768009F4A66 /* Products */,
+				144ED83B28AABCCC00DE0308 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -73,6 +83,9 @@
 				141C5DE5289BA768009F4A66 /* ViewController.swift */,
 				14D54510289C398700F0BEDC /* TableViewController.swift */,
 				141C5DE7289BA768009F4A66 /* Main.storyboard */,
+				144ED83728AABC6600DE0308 /* IAP Manager.swift */,
+				144ED83E28AABCFD00DE0308 /* ProductIds.plist */,
+				144ED83928AABC7F00DE0308 /* SupportViewController.swift */,
 				1455527028A6AE60007368FC /* TeamTrainViewController.swift */,
 				148AA6EE28A6390100B8C02F /* TeamFixturesViewController.swift */,
 				148AA6EC28A6369300B8C02F /* TeamMapViewController.swift */,
@@ -83,6 +96,14 @@
 				141C5DEF289BA769009F4A66 /* Info.plist */,
 			);
 			path = "WSL Grounds";
+			sourceTree = "<group>";
+		};
+		144ED83B28AABCCC00DE0308 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				144ED83C28AABCCC00DE0308 /* StoreKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -146,6 +167,7 @@
 				141C5DEE289BA769009F4A66 /* LaunchScreen.storyboard in Resources */,
 				141C5DEB289BA769009F4A66 /* Assets.xcassets in Resources */,
 				141C5DE9289BA768009F4A66 /* Main.storyboard in Resources */,
+				144ED83F28AABCFD00DE0308 /* ProductIds.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -158,9 +180,11 @@
 			files = (
 				1417538828A572B1009595C7 /* TeamInfoViewController.swift in Sources */,
 				1417538A28A57368009595C7 /* TeamViewController.swift in Sources */,
+				144ED83A28AABC7F00DE0308 /* SupportViewController.swift in Sources */,
 				141C5DE6289BA768009F4A66 /* ViewController.swift in Sources */,
 				141C5DE2289BA768009F4A66 /* AppDelegate.swift in Sources */,
 				1455527128A6AE60007368FC /* TeamTrainViewController.swift in Sources */,
+				144ED83828AABC6600DE0308 /* IAP Manager.swift in Sources */,
 				148AA6ED28A6369300B8C02F /* TeamMapViewController.swift in Sources */,
 				141C5DE4289BA768009F4A66 /* SceneDelegate.swift in Sources */,
 				148AA6EF28A6390100B8C02F /* TeamFixturesViewController.swift in Sources */,
