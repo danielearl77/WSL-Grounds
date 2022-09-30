@@ -23,9 +23,9 @@ class TeamViewController: UITabBarController {
             stationCode = "ELS"
             stadiumLat = 51.661939
             stadiumLon = -0.272376
-            teamCarInfo = "SatNav Postcode: WD6 5AL\n"
-            teamTrainInfo = "ERROR"
-            teamDrinkInfo = "ERROR"
+            teamCarInfo = "SatNav Postcode: WD6 5AL\n\nArsenal Women play most of their home games at Borehamwood Football Club's ground.\n\nLeave the M25 at Junction 23 and take the A1 south towards London. Leave the A1 at the junction with the A5135 towards Borehamwood. Follow the signs to Borehamwood (A5135) onto Rowley Lane, which then become Elstree Way. At the double roundabout stay continue straight on, staying on the A5135 Elstree Way. At the next roundabout take the second exit onto Brook Road.  Continue on Brook Road and the ground is on the right hand side just past the Brook Road car park."
+            teamTrainInfo = "From Elstree and Borehamwood Station, exit onto Station Road and turn left. At the end turn right onto Shenley Road. Walk along Shenley Road, past Elstree Studios to the roundabout. Take the first exit into Brook Road, and walk up past the Brook Road Car Park, taking the next right into Broughinge Road for the ground."
+            teamDrinkInfo = "There are plenty of food and drink options on Shenley Road between the station and the ground.  The Wetherspoons by the large Tesco on Shenley road is the closest pub to the ground."
             teamFixtures = "https://www.bbc.co.uk/sport/football/teams/arsenal-ladies/scores-fixtures/"
         } else if teamName == "Aston Villa" {
             stationCode = "BSC"
@@ -33,7 +33,7 @@ class TeamViewController: UITabBarController {
             stadiumLon = -1.991164
             teamCarInfo = "Sat Nav Postcode: WS1 4SA\n\nAston Villa Women play most of their home games at Walsall's Banks Stadium. Some games will be played at Villa Park so please check before travelling.\n\nFor games at the Banks Stadium leave the M6 at Junction 9 taking the A461 towards Walsall. Turn right on to the A4148 (Wallowes Lane) and then turn right at the second set of traffic lights.  The ground is on the left."
             teamTrainInfo = "From Bescot Stadium Station, exit the station and walk under the M6 to the ground."
-            teamDrinkInfo = "The closest pub to the ground is the King George V, on Wallowes Lane about 15 minutes walk away by Morrisions. There is also the Saddlers Club outside the ground, which admits fans for a small fee.\n\nAlcohol is not available inside the stadium."
+            teamDrinkInfo = "The closest pub to the ground is the King George V, on Wallowes Lane about 15 minutes’ walk away by Morrisions. There is also the Saddlers Club outside the ground, which admits fans for a small fee.\n\nAlcohol is not available inside the stadium."
             teamFixtures = "https://www.bbc.co.uk/sport/football/teams/aston-villa-women/scores-fixtures"
         } else if teamName == "Brighton & Hove Albion" {
             stationCode = "CRW"
@@ -41,13 +41,13 @@ class TeamViewController: UITabBarController {
             stadiumLon = -0.1953945
             teamCarInfo = "Sat Nav Postcode: RH11 9RX\n\nBrighton & Hove Albion Women play most of their home games the Crawley Town Peoples Pension Stadium. Some games will be played at the Amex so please check before travelling.\n\nFor games in Crawley leave the M23 at Junction 11 and take the A23 towards Crawley. Once on the A23 at the next roundabout take the first left onto Coachmans Drive for the ground."
             teamTrainInfo = "Crawley Station is a half hour walk away. Exit the station onto Station Way and at the end turn left onto Brighton Road. After half a mile turn left onto Southgate Drive and then right onto Barrington Road. Next turn right onto Wakehurst Drive and then left into Tyler Road. At the end turn right onto Southgate Avenue. Walk down Southgate Avenue to the roundabout for the ground."
-            teamDrinkInfo = "The closest pub to the ground is the Half Moon, on Brighton Road about five minutes walk from the ground. Alternatively further down Brighton Road, into Wakehurst Drive is the Downsman."
+            teamDrinkInfo = "The closest pub to the ground is the Half Moon, on Brighton Road about five minutes’ walk from the ground. Alternatively, further down Brighton Road, into Wakehurst Drive is the Downsman."
             teamFixtures = "https://www.bbc.co.uk/sport/football/teams/brighton-and-hove-albion-women/scores-fixtures"
         } else if teamName == "Chelsea" {
             stationCode = "NBT"
             stadiumLat = 51.4060501
             stadiumLon = -0.2814285
-            teamCarInfo = "SatNav Postcode: KT1 3PB\n\nChelsea Women play their home games at Kingsmeadow, Southwest London. Leave the M25 at Junction 10 and take the A3 towards London.  Turn off the A3 at New Malden onto the A2043 and at the next roundabout turn left onto Kingston Road (A2043).  Continue on Kingston Road towards Kingston and the ground is on the left after about a mile."
+            teamCarInfo = "SatNav Postcode: KT1 3PB\n\nChelsea Women play their home games at Kingsmeadow, Southwest London.\n\nLeave the M25 at Junction 10 and take the A3 towards London.  Turn off the A3 at New Malden onto the A2043 and at the next roundabout turn left onto Kingston Road (A2043).  Continue on Kingston Road towards Kingston and the ground is on the left after about a mile."
             teamTrainInfo = "From London Waterloo take the train to Norbiton Station.  Exit the station on to either Coombe Road or Norbiton Avenue.  From Coombe Road turn left and walk under the railway bridge and then turn right onto Norbiton Avenue.  Follow Norbiton Avenue all the way round to Gloucester Road.  Turn right onto Gloucester Road and then at the end turn left onto Cambridge Road, the ground is down the third street on the right."
             teamDrinkInfo = "Close to the ground on Kingston Road are the Duke of Wellington and the Prince of Wales.  Otherwise there are pubs in Kingston or New Malden."
             teamFixtures = "https://www.bbc.co.uk/sport/football/teams/chelsea-ladies/scores-fixtures"
@@ -55,9 +55,9 @@ class TeamViewController: UITabBarController {
             stationCode = "KKD"
             stadiumLat = 53.447313
             stadiumLon = -2.953017
-            teamCarInfo = "SatNav Postcode: L4 9XP\n\n"
-            teamTrainInfo = "ERROR"
-            teamDrinkInfo = "ERROR"
+            teamCarInfo = "SatNav Postcode: L4 9XP\n\nEverton Women play their home games at Walton Hall Park, around a mile north east of Goodison Park.\n\nLeave the M62 at Junction 6 and take the M57 north. Leave the M57 at junction 4 and take the A580 towards Liverpool. Continue on the A580 towards Liverpool and Walton Hall Park is on the right after 3 miles."
+            teamTrainInfo = "Exit Kirkdale Station and turn right onto Marsh Street.  At the end of Marsh Street turn right, and then immediately left onto the A5038, then take the first right into Selwyn Street. Keep walking along Selwyn Street which will become Hale Road, at the end turn left into County Road.  Walk up County Road and take the sixth right into Church Road West. Continue along Church Road and at the end turn left into Walton Lane. Walk along Walton Lane, crossing over Queens Drive, the Walton Hall Park complex is then on the right at the end of the houses."
+            teamDrinkInfo = "There are a few pubs and fast food restaurants on Walton Lane near Goodison Park, including a Wetherspoons. If walking from Kirkdale there is also the Anfield Hotel on Church Road."
             teamFixtures = "https://www.bbc.co.uk/sport/football/teams/everton-ladies/scores-fixtures"
         } else if teamName == "Leicester City" {
             stationCode = "LEI"
@@ -79,7 +79,7 @@ class TeamViewController: UITabBarController {
             stationCode = "ABY"
             stadiumLat = 53.481274
             stadiumLon = -2.192825
-            teamCarInfo = "SatNav Postcode: M11 4TQ\n\nManchester City Women play their games at the Manchester City Acadamy Stadium, which is across the A6010 from the Etihad. Leave the M60 at Junction 23 and take the A635 towards Manchester. Turn off the A635 onto the Ashton New Road (A662). Stay on the A662 and the stadium is on the left just before the A6010."
+            teamCarInfo = "SatNav Postcode: M11 4TQ\n\nManchester City Women play their games at the Manchester City Academy Stadium, which is across the A6010 from the Etihad.\n\nLeave the M60 at Junction 23 and take the A635 towards Manchester. Turn off the A635 onto the Ashton New Road (A662). Stay on the A662 and the stadium is on the left just before the A6010."
             teamTrainInfo = "Take the train from Manchester Piccadilly to Ashburys Station, on leaving the station turn left and walk up the A6010 for about 15 minutes to the ground."
             teamDrinkInfo = "There are very few pubs near the ground, and most are for home fans only. The Stanley, on Pottery Lane towards Ashburys Railway Station, does admit away fans. A better bet would be to drink in Manchester City Centre before heading to the ground.\n\nAlcohol is also available inside the stadium."
             teamFixtures = "https://www.bbc.co.uk/sport/football/teams/manchester-city-women/scores-fixtures"
@@ -87,9 +87,9 @@ class TeamViewController: UITabBarController {
             stationCode = "NLW"
             stadiumLat = 53.489750
             stadiumLon = -2.530078
-            teamCarInfo = "SatNav Postcode: WN7 4JY\n\n"
-            teamTrainInfo = "ERROR"
-            teamDrinkInfo = "ERROR"
+            teamCarInfo = "SatNav Postcode: WN7 4JY\n\nManchester United Women play their games at the Leigh Sports Village, about 12 miles to the west of Manchester.\n\nLeave the M6 at Junction 23 and take the A580 towards Manchester. After four miles turn off the A580 onto the A579 towards Leigh. Continue straight over St Helens Road and then turn right at the next roundabout into the Leigh Sports Village complex for the ground."
+            teamTrainInfo = "The closest railway station is Newton-le-Willows nearly five miles away, so if you are taking the train a taxi from the station is really the only option."
+            teamDrinkInfo = "The Whistling Wren right next to the ground is the closest pub, with a few other food and drink options in Leigh Town Centre."
             teamFixtures = "https://www.bbc.co.uk/sport/football/teams/manchester-united-women/scores-fixtures"
         } else if teamName == "Reading" {
             stationCode = "RDG"
@@ -97,17 +97,17 @@ class TeamViewController: UITabBarController {
             stadiumLon = -0.9834968
             teamCarInfo = "Sat Nav Postcode: RG2 0FL\n\nReading Women play their home games at the Select Car Leasing Stadium.\n\nFrom the M4 Junction 11 take the A33 (Reading Relief Road) towards Reading, turning off the A33 into Hurst Road for the ground."
             teamTrainInfo = "From Reading Station take the Football Special bus to the ground, come out of the station cross the road and turn right for the bus stop."
-            teamDrinkInfo = "There are no pubs near to the ground, so if arriving by train then drink in the town centre by the railway station before getting the buses out to the stadium.  There is also a Holiday Inn and pub called Calaghans about fifteen minutes walk from the ground on Imperial Way.\n\nAlcohol is also available inside the stadium."
+            teamDrinkInfo = "There are no pubs near to the ground, so if arriving by train then drink in the town centre by the railway station before getting the buses out to the stadium.  There is also a Holiday Inn and pub called Calaghans about fifteen minutes’ walk from the ground on Imperial Way.\n\nAlcohol is also available inside the stadium."
             teamFixtures = "https://www.bbc.co.uk/sport/football/teams/reading-women/scores-fixtures"
         } else if teamName == "Tottenham Hotspur" {
             stationCode = "SRA"
             stadiumLat = 51.5602116
             stadiumLon = -0.0118855
-            teamCarInfo = "Sat Nav Postcode: E10 5NF\n\nTottenham Hotspur Women play most of thier home games at Leyton Orient Brisbane Road. Some games will be played at the Tottenham Hotspur Stadium so please check before travelling.\n\nLeave the M25 at junction 27 and take the M11 southbound.  At the end of the M11, bear right (A406 N. Circ. Rd West, London N and W) onto the North Circular Road.  Keep in left hand lanes and take first exit (signposted Walthamstow and City A104).  At the roundabout turn left into Woodford New Road (A104). At next roundabout take 2nd exit and follow road round to left into Lea Bridge Road.  After 0.5 miles turn left at lights into Leyton Green Road.  Filter left after 0.3 miles and turn left at the T-junction into Leyton High Road.  After 1.2 miles ground is on the right down Buckingham Road."
+            teamCarInfo = "Sat Nav Postcode: E10 5NF\n\nTottenham Hotspur Women play most of their home games at Leyton Orient Brisbane Road. Some games will be played at the Tottenham Hotspur Stadium so please check before travelling.\n\nLeave the M25 at junction 27 and take the M11 southbound.  At the end of the M11, bear right (A406 N. Circ. Rd West, London N and W) onto the North Circular Road.  Keep in left hand lanes and take first exit (signposted Walthamstow and City A104).  At the roundabout turn left into Woodford New Road (A104). At next roundabout take 2nd exit and follow road round to left into Lea Bridge Road.  After 0.5 miles turn left at lights into Leyton Green Road.  Filter left after 0.3 miles and turn left at the T-junction into Leyton High Road.  After 1.2 miles ground is on the right down Buckingham Road."
             teamTrainInfo = "Take the Central Line to Leyton Tube Station.  Exit the station and turn right onto the High Road Leyton.  Walk up the High Road and then take the seventh left into Buckingham Road for the ground.  The nearest National Rail Station is Stratford, where you can change to the Central Line."
             teamDrinkInfo = "The supporters club at the ground (in the West Stand) admits away fans.  The nearest pub to the ground is the Coach & Horses, on Leyton High Road.  Turn right out of the tube station and walk along the High Road (past the turning for the ground) for about half a mile."
             teamFixtures = "https://www.bbc.co.uk/sport/football/teams/tottenham-hotspur-women/scores-fixtures"
-        }else if teamName == "West Ham Utd" {
+        } else if teamName == "West Ham Utd" {
             stationCode = "XXX"
             stadiumLat = 51.54740
             stadiumLon = 0.16207
