@@ -23,10 +23,16 @@ class TeamInfoViewController: UIViewController {
         let paragraphStyle = NSMutableParagraphStyle()
         paragraphStyle.alignment = .justified
         
-        let headerAttributes = [NSAttributedString.Key.font: headerFont]
+        let headerAttributes: [NSAttributedString.Key: Any] = [
+            .font: headerFont,
+            .foregroundColor: UIColor.label
+        ]
+        
         let bodyAttributes: [NSAttributedString.Key: Any] = [
             .font: bodyFont,
-            .paragraphStyle: paragraphStyle]
+            .paragraphStyle: paragraphStyle,
+            .foregroundColor: UIColor.label
+        ]
         
         let carTitle = "By Car\n"
         //let trainTitle = "By Train\n"
