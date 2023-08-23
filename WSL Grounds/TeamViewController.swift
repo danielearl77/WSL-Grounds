@@ -17,6 +17,7 @@ class TeamViewController: UITabBarController {
     var teamTrainInfo = ""
     var teamDrinkInfo = ""
     var teamFixtures = ""
+    var teamStadiumName = ""
     
     func loadTeamData() {
         if teamName == "Arsenal" {
@@ -43,6 +44,15 @@ class TeamViewController: UITabBarController {
             teamTrainInfo = "Crawley Station is a half hour walk away. Exit the station onto Station Way and at the end turn left onto Brighton Road. After half a mile turn left onto Southgate Drive and then right onto Barrington Road. Next turn right onto Wakehurst Drive and then left into Tyler Road. At the end turn right onto Southgate Avenue. Walk down Southgate Avenue to the roundabout for the ground."
             teamDrinkInfo = "The closest pub to the ground is the Half Moon, on Brighton Road about five minutes’ walk from the ground. Alternatively, further down Brighton Road, into Wakehurst Drive is the Downsman."
             teamFixtures = "https://www.bbc.co.uk/sport/football/teams/brighton-and-hove-albion-women/scores-fixtures"
+        } else if teamName == "Bristol City" {
+            stationCode = "BRI"
+            stadiumLat = 51.439884
+            stadiumLon = -2.6210076
+            teamStadiumName = "Ashton Gate"
+            teamCarInfo = "Sat Nav Postcode: BS3 2EJ\n\nBristol City Women play their home games at Ashton Gate.\n\nFrom the M5 Junction 18 take the A4 (Portway) towards Bristol. The Portway becomes Cabot Way, and then Brunel Way over the river. Turn off Brunel Way into Winterstoke Road, the ground is on the left."
+            teamTrainInfo = "Bristol Temple Meads Station is too far to walk so taxi is the best bet from here.  After the game buses run from the ground back to the City Centre and the Station."
+            teamDrinkInfo = "The Nova Scotia or the Pumphouse, both by the waterfront, are suitable for away fans. Another option is the Knights Templar which is straight ahead when coming out of Temple Meads Station.\n\nThe pubs near the ground are all best avoided by away fans, and alcohol is not available inside the stadium for away fans."
+            teamFixtures = "https://www.bbc.co.uk/sport/football/teams/bristol-city-women/scores-fixtures"
         } else if teamName == "Chelsea" {
             stationCode = "NBT"
             stadiumLat = 51.4060501
@@ -91,14 +101,6 @@ class TeamViewController: UITabBarController {
             teamTrainInfo = "The closest railway station is Newton-le-Willows nearly five miles away, so if you are taking the train a taxi from the station is really the only option."
             teamDrinkInfo = "The Whistling Wren right next to the ground is the closest pub, with a few other food and drink options in Leigh Town Centre."
             teamFixtures = "https://www.bbc.co.uk/sport/football/teams/manchester-united-women/scores-fixtures"
-        } else if teamName == "Reading" {
-            stationCode = "RDG"
-            stadiumLat = 51.4223249
-            stadiumLon = -0.9834968
-            teamCarInfo = "Sat Nav Postcode: RG2 0FL\n\nReading Women play their home games at the Select Car Leasing Stadium.\n\nFrom the M4 Junction 11 take the A33 (Reading Relief Road) towards Reading, turning off the A33 into Hurst Road for the ground."
-            teamTrainInfo = "From Reading Station take the Football Special bus to the ground, come out of the station cross the road and turn right for the bus stop."
-            teamDrinkInfo = "There are no pubs near to the ground, so if arriving by train then drink in the town centre by the railway station before getting the buses out to the stadium.  There is also a Holiday Inn and pub called Calaghans about fifteen minutes’ walk from the ground on Imperial Way.\n\nAlcohol is also available inside the stadium."
-            teamFixtures = "https://www.bbc.co.uk/sport/football/teams/reading-women/scores-fixtures"
         } else if teamName == "Tottenham Hotspur" {
             stationCode = "SRA"
             stadiumLat = 51.5602116
