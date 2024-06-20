@@ -44,15 +44,6 @@ class TeamViewController: UITabBarController {
             teamTrainInfo = "Crawley Station is a half hour walk away. Exit the station onto Station Way and at the end turn left onto Brighton Road. After half a mile turn left onto Southgate Drive and then right onto Barrington Road. Next turn right onto Wakehurst Drive and then left into Tyler Road. At the end turn right onto Southgate Avenue. Walk down Southgate Avenue to the roundabout for the ground."
             teamDrinkInfo = "The closest pub to the ground is the Half Moon, on Brighton Road about five minutes’ walk from the ground. Alternatively, further down Brighton Road, into Wakehurst Drive is the Downsman."
             teamFixtures = "https://www.bbc.co.uk/sport/football/teams/brighton-and-hove-albion-women/scores-fixtures"
-        } else if teamName == "Bristol City" {
-            stationCode = "BRI"
-            stadiumLat = 51.439884
-            stadiumLon = -2.6210076
-            teamStadiumName = "Ashton Gate"
-            teamCarInfo = "Sat Nav Postcode: BS3 2EJ\n\nBristol City Women play their home games at Ashton Gate.\n\nFrom the M5 Junction 18 take the A4 (Portway) towards Bristol. The Portway becomes Cabot Way, and then Brunel Way over the river. Turn off Brunel Way into Winterstoke Road, the ground is on the left."
-            teamTrainInfo = "Bristol Temple Meads Station is too far to walk so taxi is the best bet from here.  After the game buses run from the ground back to the City Centre and the Station."
-            teamDrinkInfo = "The Nova Scotia or the Pumphouse, both by the waterfront, are suitable for away fans. Another option is the Knights Templar which is straight ahead when coming out of Temple Meads Station.\n\nThe pubs near the ground are all best avoided by away fans, and alcohol is not available inside the stadium for away fans."
-            teamFixtures = "https://www.bbc.co.uk/sport/football/teams/bristol-city-women/scores-fixtures"
         } else if teamName == "Chelsea" {
             stationCode = "NBT"
             stadiumLat = 51.4060501
@@ -61,6 +52,15 @@ class TeamViewController: UITabBarController {
             teamTrainInfo = "From London Waterloo take the train to Norbiton Station.  Exit the station on to either Coombe Road or Norbiton Avenue.  From Coombe Road turn left and walk under the railway bridge and then turn right onto Norbiton Avenue.  Follow Norbiton Avenue all the way round to Gloucester Road.  Turn right onto Gloucester Road and then at the end turn left onto Cambridge Road, the ground is down the third street on the right."
             teamDrinkInfo = "Close to the ground on Kingston Road are the Duke of Wellington and the Prince of Wales.  Otherwise there are pubs in Kingston or New Malden."
             teamFixtures = "https://www.bbc.co.uk/sport/football/teams/chelsea-ladies/scores-fixtures"
+        } else if teamName == "Crystal Palace" {
+            stationCode = "WSU"
+            stadiumLat = 51.36759
+            stadiumLon = -0.20429
+            teamStadiumName = "VBS Community Stadium"
+            teamCarInfo = "Sat Nav Postcode: SM1 2EY\n\nCrystal Palace Women play their home games at the VBS Community Stadium, the home of Sutton United.\n\nLeave the M25 at Junction 8 and take the A217 towards Sutton. When you reach a small roundabout, bear left continuing on the A217 towards Central London. At the second set of traffic lights turn right into Gander Green Lane. The ground is up here on the left."
+            teamTrainInfo = "Exit West Sutton Railway Station and turn right. The ground is on the right about two minutes away."
+            teamDrinkInfo = "At the ground there is a Social Club which admits away fans, and on the A217 you will find the Gander Pub. Otherwise there are several pubs in Sutton town centre."
+            teamFixtures = "https://www.bbc.co.uk/sport/football/teams/sutton-united/scores-fixtures"
         } else if teamName == "Everton" {
             stationCode = "KKD"
             stadiumLat = 53.447313
@@ -93,7 +93,7 @@ class TeamViewController: UITabBarController {
             teamTrainInfo = "Take the train from Manchester Piccadilly to Ashburys Station, on leaving the station turn left and walk up the A6010 for about 15 minutes to the ground."
             teamDrinkInfo = "There are very few pubs near the ground, and most are for home fans only. The Stanley, on Pottery Lane towards Ashburys Railway Station, does admit away fans. A better bet would be to drink in Manchester City Centre before heading to the ground.\n\nAlcohol is also available inside the stadium."
             teamFixtures = "https://www.bbc.co.uk/sport/football/teams/manchester-city-women/scores-fixtures"
-        } else if teamName == "Manchester Utd" {
+        } else if teamName == "Manchester United" {
             stationCode = "NLW"
             stadiumLat = 53.489750
             stadiumLon = -2.530078
@@ -109,7 +109,7 @@ class TeamViewController: UITabBarController {
             teamTrainInfo = "Take the Central Line to Leyton Tube Station.  Exit the station and turn right onto the High Road Leyton.  Walk up the High Road and then take the seventh left into Buckingham Road for the ground.  The nearest National Rail Station is Stratford, where you can change to the Central Line."
             teamDrinkInfo = "The supporters club at the ground (in the West Stand) admits away fans.  The nearest pub to the ground is the Coach & Horses, on Leyton High Road.  Turn right out of the tube station and walk along the High Road (past the turning for the ground) for about half a mile."
             teamFixtures = "https://www.bbc.co.uk/sport/football/teams/tottenham-hotspur-women/scores-fixtures"
-        } else if teamName == "West Ham Utd" {
+        } else if teamName == "West Ham United" {
             stationCode = "XXX"
             stadiumLat = 51.54740
             stadiumLon = 0.16207
@@ -118,13 +118,14 @@ class TeamViewController: UITabBarController {
             teamDrinkInfo = "The only real option is the Eastbrook, on Rainham Road past the ground and Golds Gym."
             teamFixtures = "https://www.bbc.co.uk/sport/football/teams/west-ham-united-ladies/scores-fixtures"
         } else {
-            stationCode = "VIC"
+            stationCode = "XXX"
             stadiumLat = 0.0
             stadiumLon = 0.0
             teamCarInfo = "ERROR"
             teamTrainInfo = "ERROR"
             teamDrinkInfo = "ERROR"
             teamFixtures = "https://www.bbc.co.uk/sport/football/"
+            teamStadiumName = "ERROR"
         }
     }
 
