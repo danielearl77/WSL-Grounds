@@ -11,7 +11,7 @@
 		1417538A28A57368009595C7 /* TeamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1417538928A57367009595C7 /* TeamViewController.swift */; };
 		141C5DE2289BA768009F4A66 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 141C5DE1289BA768009F4A66 /* AppDelegate.swift */; };
 		141C5DE4289BA768009F4A66 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 141C5DE3289BA768009F4A66 /* SceneDelegate.swift */; };
-		141C5DE6289BA768009F4A66 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 141C5DE5289BA768009F4A66 /* ViewController.swift */; };
+		141C5DE6289BA768009F4A66 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 141C5DE5289BA768009F4A66 /* AboutViewController.swift */; };
 		141C5DE9289BA768009F4A66 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 141C5DE7289BA768009F4A66 /* Main.storyboard */; };
 		141C5DEB289BA769009F4A66 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 141C5DEA289BA769009F4A66 /* Assets.xcassets */; };
 		141C5DEE289BA769009F4A66 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 141C5DEC289BA769009F4A66 /* LaunchScreen.storyboard */; };
@@ -31,7 +31,7 @@
 		141C5DDE289BA768009F4A66 /* WSL Grounds.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "WSL Grounds.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		141C5DE1289BA768009F4A66 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		141C5DE3289BA768009F4A66 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		141C5DE5289BA768009F4A66 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		141C5DE5289BA768009F4A66 /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
 		141C5DE8289BA768009F4A66 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		141C5DEA289BA769009F4A66 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		141C5DED289BA769009F4A66 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -80,7 +80,7 @@
 			children = (
 				141C5DE1289BA768009F4A66 /* AppDelegate.swift */,
 				141C5DE3289BA768009F4A66 /* SceneDelegate.swift */,
-				141C5DE5289BA768009F4A66 /* ViewController.swift */,
+				141C5DE5289BA768009F4A66 /* AboutViewController.swift */,
 				14D54510289C398700F0BEDC /* TableViewController.swift */,
 				141C5DE7289BA768009F4A66 /* Main.storyboard */,
 				144ED83728AABC6600DE0308 /* IAP Manager.swift */,
@@ -134,7 +134,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1330;
-				LastUpgradeCheck = 1330;
+				LastUpgradeCheck = 1540;
 				TargetAttributes = {
 					141C5DDD289BA768009F4A66 = {
 						CreatedOnToolsVersion = 13.3;
@@ -181,7 +181,7 @@
 				1417538828A572B1009595C7 /* TeamInfoViewController.swift in Sources */,
 				1417538A28A57368009595C7 /* TeamViewController.swift in Sources */,
 				144ED83A28AABC7F00DE0308 /* SupportViewController.swift in Sources */,
-				141C5DE6289BA768009F4A66 /* ViewController.swift in Sources */,
+				141C5DE6289BA768009F4A66 /* AboutViewController.swift in Sources */,
 				141C5DE2289BA768009F4A66 /* AppDelegate.swift in Sources */,
 				1455527128A6AE60007368FC /* TeamTrainViewController.swift in Sources */,
 				144ED83828AABC6600DE0308 /* IAP Manager.swift in Sources */,
@@ -218,6 +218,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
@@ -250,6 +251,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -264,7 +266,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -278,6 +280,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
@@ -310,6 +313,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -318,7 +322,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -351,7 +355,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.2;
+				MARKETING_VERSION = 1.3;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.danielearl.WSL-Grounds";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -383,7 +387,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.2;
+				MARKETING_VERSION = 1.3;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.danielearl.WSL-Grounds";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
