@@ -21,20 +21,20 @@ class TeamViewController: UITabBarController {
     
     func loadTeamData() {
         if teamName == "Arsenal" {
-            stationCode = "ELS"
-            stadiumLat = 51.661939
-            stadiumLon = -0.272376
-            teamCarInfo = "SatNav Postcode: WD6 5AL\n\nArsenal Women play most of their home games at Borehamwood Football Club's ground, but please check before travelling as 5 games will take place at the Emirates Stadium.\n\nLeave the M25 at Junction 23 and take the A1 south towards London. Leave the A1 at the junction with the A5135 towards Borehamwood. Follow the signs to Borehamwood (A5135) onto Rowley Lane, which then become Elstree Way. At the double roundabout stay continue straight on, staying on the A5135 Elstree Way. At the next roundabout take the second exit onto Brook Road.  Continue on Brook Road and the ground is on the right hand side just past the Brook Road car park."
-            teamTrainInfo = "From Elstree and Borehamwood Station, exit onto Station Road and turn left. At the end turn right onto Shenley Road. Walk along Shenley Road, past Elstree Studios to the roundabout. Take the first exit into Brook Road, and walk up past the Brook Road Car Park, taking the next right into Broughinge Road for the ground."
-            teamDrinkInfo = "There are plenty of food and drink options on Shenley Road between the station and the ground.  The Wetherspoons by the large Tesco on Shenley road is the closest pub to the ground."
+            stationCode = "FPK"
+            stadiumLat = 51.5550526
+            stadiumLon = -0.105846
+            teamCarInfo = "Sat Nav Postcode: N5 1BU\n\nArsenal Women will play all 11 WSL games at the Emirates this season. However most of their cup games will still be played at the Borehamwood Ground so please check before travelling to cup games.\n\nFrom M1, Junction 2, take the A1, towards Central London. Keep on the A1 until you see Holloway Road Tube Station on your right.  After the Tube Station turn left at the traffic lights into Hornsey Road, keep going until you reach the stadium. There is no parking at the ground or in nearby streets."
+            teamTrainInfo = "Take the Piccadilly line to Arsenal, exit the station and turn right, follow Drayton Park Road and use one of the large bridges to the ground. Alternatively take the Train or Piccadilly line to Finsbury Park and follow St Thomas' Road down to Arsenal Tube Station."
+            teamDrinkInfo = "The traditional away pub is the Drayton Arms near Arsenal tube station and Drayton Park railway station. Another option is the Twelve Pins or the The Blackstock near Finsbury Park Tube Station.\n\nAlcohol is also available inside the stadium."
             teamFixtures = "https://www.bbc.co.uk/sport/football/teams/arsenal-ladies/scores-fixtures/"
         } else if teamName == "Aston Villa" {
-            stationCode = "BSC"
-            stadiumLat = 52.5655187
-            stadiumLon = -1.991164
-            teamCarInfo = "Sat Nav Postcode: WS1 4SA\n\nAston Villa Women play most of their home games at Walsall's Banks Stadium. Some games will be played at Villa Park so please check before travelling.\n\nFor games at the Banks Stadium leave the M6 at Junction 9 taking the A461 towards Walsall. Turn right on to the A4148 (Wallowes Lane) and then turn right at the second set of traffic lights.  The ground is on the left."
-            teamTrainInfo = "From Bescot Stadium Station, exit the station and walk under the M6 to the ground."
-            teamDrinkInfo = "The closest pub to the ground is the King George V, on Wallowes Lane about 15 minutes’ walk away by Morrisions. There is also the Saddlers Club outside the ground, which admits fans for a small fee.\n\nAlcohol is not available inside the stadium."
+            stationCode = "WTT"
+            stadiumLat = 52.5088714
+            stadiumLon = -1.8848723
+            teamCarInfo = "Sat Nav Postcode: B6 6HE\n\nAston Villa Women play all 11 WSL games at Villa Park this season, however, some cup games may still be played at Walsall's Banks Stadium so please check before travelling to cup games.\n\nLeave the M6 at Junction 6, following the signs for Birmingham (NE) and the ground is well signposted. When on Lichfield Road, turn right into Aston Hall Road and keep going until you reach the ground."
+            teamTrainInfo = "Take a local train from New Street Station to Witton. Turn left out of the station and walk down to the roundabout, then left again into Witton Lane."
+            teamDrinkInfo = "Most of the pubs near the ground are for home fans only. The Witton Arms does, however, admit away fans. A bit further way is the Barton Arms on High Street Aston.\n\nAlcohol is not available inside the away end of the stadium."
             teamFixtures = "https://www.bbc.co.uk/sport/football/teams/aston-villa-women/scores-fixtures"
         } else if teamName == "Brighton & Hove Albion" {
             stationCode = "CRW"
@@ -62,12 +62,13 @@ class TeamViewController: UITabBarController {
             teamDrinkInfo = "At the ground there is a Social Club which admits away fans, and on the A217 you will find the Gander Pub. Otherwise there are several pubs in Sutton town centre."
             teamFixtures = "https://www.bbc.co.uk/sport/football/teams/sutton-united/scores-fixtures"
         } else if teamName == "Everton" {
-            stationCode = "KKD"
-            stadiumLat = 53.447313
-            stadiumLon = -2.953017
-            teamCarInfo = "SatNav Postcode: L4 9XP\n\nEverton Women play their home games at Walton Hall Park, around a mile north east of Goodison Park.\n\nLeave the M62 at Junction 6 and take the M57 north. Leave the M57 at junction 4 and take the A580 towards Liverpool. Continue on the A580 towards Liverpool and Walton Hall Park is on the right after 3 miles."
-            teamTrainInfo = "Exit Kirkdale Station and turn right onto Marsh Street.  At the end of Marsh Street turn right, and then immediately left onto the A5038, then take the first right into Selwyn Street. Keep walking along Selwyn Street which will become Hale Road, at the end turn left into County Road.  Walk up County Road and take the sixth right into Church Road West. Continue along Church Road and at the end turn left into Walton Lane. Walk along Walton Lane, crossing over Queens Drive, the Walton Hall Park complex is then on the right at the end of the houses."
-            teamDrinkInfo = "There are a few pubs and fast food restaurants on Walton Lane near Goodison Park, including a Wetherspoons. If walking from Kirkdale there is also the Anfield Hotel on Church Road."
+            stationCode = "SDL"
+            stadiumLat = 53.4391966
+            stadiumLon = -2.9670169
+            teamStadiumName = "Goodison Park"
+            teamCarInfo = "Sat Nav Postcode: L4 4EL\n\nEverton Women will play their home games this season at Goodison Park, with one game at the new Hill Dickinson Stadium.\n\nAt the end of the M62 take the A5058 towards Liverpool. Follow this road until you reach Walton Lane (A580), turn left onto Walton Lane and keep going until you reach the ground on your right."
+            teamTrainInfo = "Take a local train to Sandhills Station, from here there special football buses to the ground. Alternatively you can walk from Kirkdale station, turn right cross the railway bridge, walk up Westminster Road and turn left into Goodall Street, walk up to end of the road, crossing the junction with Carisbrooke Road and into Harlech Street. At the end of Harlech Street you will reach the main County Road (A59). Cross over County Road and go down Andrew Street. At the top of Andrew Street you can see the ground."
+            teamDrinkInfo = "The Thomas Frost on Walton Road is about a 15 minute walk away, or Bradleys Wine Bar a bit further down Walton Road. There are also a few pubs on Walton Lane, or a better bet would be to drink in Liverpool City Centre before heading to the ground.\n\nAlcohol is also available inside the stadium."
             teamFixtures = "https://www.bbc.co.uk/sport/football/teams/everton-ladies/scores-fixtures"
         } else if teamName == "Leicester City" {
             stationCode = "LEI"
@@ -78,13 +79,22 @@ class TeamViewController: UITabBarController {
             teamDrinkInfo = "The best bet is to drink in the City Centre before heading to the ground as the pubs near the stadium are not recommended for away fans.\n\nAlcohol is also available inside the stadium."
             teamFixtures = "https://www.bbc.co.uk/sport/football/teams/leicester-city-women/scores-fixtures"
         } else if teamName == "Liverpool" {
-            stationCode = "RFY"
-            stadiumLat = 53.3732067
-            stadiumLon = -3.035836
-            teamCarInfo = "Sat Nav Postcode: CH42 9PY\n\nLiverpool Women will play most of their games at Tranmere Rovers Prenton Park. Some games will be played at Anfield so please check before travelling.\n\nLeave the M53 at junction 3, and take the A552 (Woodchurch Road) towards Birkenhead. After passing Sainsburys on your left, turn right on to the B5151 (Mount Road) and then the first left for the ground."
-            teamTrainInfo = "From Rock Ferry Station exit onto Bedford Road. Turn right and walk down Bedford Road, which becomes Bedford Avenue. At the roundabout with Bebington Road continue straight over into Bedford Drive.  Finally turn right into Borough Road, which leads down to the ground."
-            teamDrinkInfo = "The Prenton Park Hotel is near the away end, and as a result always popular with away fans.\n\nAlcohol is also available inside the stadium."
+            stationCode = "SNH"
+            stadiumLat = 53.447537
+            stadiumLon = -2.726114
+            teamCarInfo = "Sat Nav Postcode: CH42 9PY\n\nLiverpool Women will play most of their games at the home so St Helens Rugby Club. Some games will be played at Anfield so please check before travelling.\n\nLeave the M62 at junction 7 and take the A570 into St Helens. At the third roundabout take the second exit for the ground."
+            teamTrainInfo = "From St Helens Central exit the station and turn left onto Shaw Street. Walk to the end of Shaw Street and turn right onto Par Street. At the roundabout cross over Linkway East and continue down Peasley Cross Lane, the ground is on the right after the retail park."
+            teamDrinkInfo = "The nearest pub is the Glass Horse on Sherdley Road.  Continue down Peasley Cross Lane past the ground and turn right onto Sherdley Road. The pub is on the right before the roundabout."
             teamFixtures = "https://www.bbc.co.uk/sport/football/teams/liverpool-ladies/scores-fixtures"
+        } else if teamName == "London City Lionesses" {
+            stationCode = "BMS"
+            stadiumLat = 51.39031
+            stadiumLon = 0.02117
+            teamStadiumName = "Hayes Lane Stadium"
+            teamCarInfo = "Sat Nav Postcode: BR2 9EF\n\nLondon City Lionesses play their home games at Bromley FC Hayes Lane Stadium.\n\nLeave the M25 at Junction 4 and take the A21 north towards Bromley and London. After five miles turn left onto the A232 towards Croydon and Sutton. At the 2nd set of lights turn right into Baston Road. Continue straight on this road until it becomes Hayes Lane, after the mini roundabout the entrance to the ground is down on the right."
+            teamTrainInfo = "Exit Bromley South Station, turn left, and walk down the High Street. Turn right into Westmoreland Road and after passing a church on your left, turn left into Hayes Road. Walk down Hayes Road until your each its end and turn right into Hayes Lane. The entrance to the ground is up Hayes Lane on the left. You can also get the 119 Bus from the station right past the ground."
+            teamDrinkInfo = "There is a Social Club at the ground, serving food and drink. Away fans can use this unless segregation is in force, in that case a small temporary bar is set up for away fans. the closest pub to the ground is a 15-minute walk away on Masons Hill. There is also a Wetherspoons near Bromley South Railway Station."
+            teamFixtures = "https://www.londoncitylionesses.com/post/london-city-lionesses-2025-26-women-s-super-league-fixtures-confirmed"
         } else if teamName == "Manchester City" {
             stationCode = "ABY"
             stadiumLat = 53.481274

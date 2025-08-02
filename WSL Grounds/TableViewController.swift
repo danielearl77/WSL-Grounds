@@ -9,7 +9,7 @@ import UIKit
 
 class TableViewController: UITableViewController {
     
-    var Teams: [String] = ["Arsenal","Aston Villa","Brighton & Hove Albion","Chelsea","Crystal Palace","Everton","Leicester City","Liverpool","Manchester City","Manchester United","Tottenham Hotspur","West Ham United"]
+    var Teams: [String] = ["Arsenal","Aston Villa","Brighton & Hove Albion","Chelsea","Everton","Leicester City","Liverpool","London City Lionesses","Manchester City","Manchester United","Tottenham Hotspur","West Ham United"]
 
     override func viewDidLoad() {
         super.viewDidLoad()
