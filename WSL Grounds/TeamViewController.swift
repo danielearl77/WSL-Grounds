@@ -82,7 +82,7 @@ class TeamViewController: UITabBarController {
             stationCode = "SNH"
             stadiumLat = 53.447537
             stadiumLon = -2.726114
-            teamCarInfo = "Sat Nav Postcode: CH42 9PY\n\nLiverpool Women will play most of their games at the home so St Helens Rugby Club. Some games will be played at Anfield so please check before travelling.\n\nLeave the M62 at junction 7 and take the A570 into St Helens. At the third roundabout take the second exit for the ground."
+            teamCarInfo = "Sat Nav Postcode: CH42 9PY\n\nLiverpool Women will play most of their games at the home of St Helens Rugby Club. Some games will be played at Anfield so please check before travelling.\n\nLeave the M62 at junction 7 and take the A570 into St Helens. At the third roundabout take the second exit for the ground."
             teamTrainInfo = "From St Helens Central exit the station and turn left onto Shaw Street. Walk to the end of Shaw Street and turn right onto Par Street. At the roundabout cross over Linkway East and continue down Peasley Cross Lane, the ground is on the right after the retail park."
             teamDrinkInfo = "The nearest pub is the Glass Horse on Sherdley Road.  Continue down Peasley Cross Lane past the ground and turn right onto Sherdley Road. The pub is on the right before the roundabout."
             teamFixtures = "https://www.bbc.co.uk/sport/football/teams/liverpool-ladies/scores-fixtures"
